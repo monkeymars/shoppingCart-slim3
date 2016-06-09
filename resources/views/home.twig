@@ -1,0 +1,14 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-12 head-produk-baru">
+      <h1><span>Produk Terbaru</span></h1>
+    </div>
+    {% for index, product in products %}
+      <div class="col-md-3 list-product">
+        {% include 'products/partials/item.twig' with {product : product} %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

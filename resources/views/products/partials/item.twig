@@ -1,0 +1,26 @@
+<a href="{{ path_for('product.get', { id: product.id }) }}">
+  <div class="product-block">
+    <div class="product-image">
+      <img src="img/product/2.jpg"/>
+    </div>
+    <div class="product-title">
+      {{ product.name }}
+    </div>
+    <div class="product-property">
+      <div class="side-a">
+        <i class="ion-ios-pricetags"></i> Ready {{ product.stock }} pcs<br>
+        <i class="ion-ios-star"></i>
+        <i class="ion-ios-star"></i>
+        <i class="ion-ios-star"></i>
+        <i class="ion-ios-star-half"></i>
+        <i class="ion-ios-star-outline"></i>
+        <br><i class="ion-ribbon-a"></i> Discount
+      </div>
+      <div class="side-b">
+        <br>
+        <span class="discount">RP 900.000,00</span><br>
+        <span class="realcount">RP {{ product.purchase }}</span>
+      </div>
+    </div>
+  </div>
+</a>
