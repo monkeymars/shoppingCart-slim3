@@ -1,44 +1,52 @@
-<div class="top-menu navbar-fixed-top">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 menu-left">
-        <a href="#">
-          <img src="img/nitnot.id.jpg"/>
-        </a>
-      </div>
-      <div class="col-md-6 menu-search">
-        <form>
-          <input class="form-control" type="text" placeholder="Masukkan pencarian Anda">
-        </form>
-      </div>
-      <div class="col-md-3 menu-right">
-        <ul>
-          <li><i class="ion-android-person"></i></li>
-          <li><i class="ion-ios-heart"></i></li>
-          <li><i class="ion-ios-cart"></i></li>
-        </ul>
-      </div>
-    </div>
+<nav class="navbar navbar-default" role="navigation" style="boder-radius:0px; border:none;border-bottom:1px;">
+  <div class="navbar-header">
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+       <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+    </button> <a class="navbar-brand" href="#">Cart</a>
   </div>
-</div>
-<div class="bottom-menu">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="top-search">
-          <li><b>Pencarian Terbanyak:</b></li>
-          <li><a href="#">hem batik</a></li>
-          <li><a href="#">sarimbit bluss batik</a></li>
-          <li><a href="#">legging</a></li>
-          <li><a href="#">mukena bunga</a></li>
-          <li><a href="#">kerudung</a></li>
-          <li><a href="#">jarik batik</a></li>
-          <li><a href="#">legging</a></li>
-          <li><a href="#">mukena bunga</a></li>
-          <li><a href="#">kerudung</a></li>
-          <li><a href="#">jarik batik</a></li>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li>
+          <a href="/home">Home</a>
+      </li>
+      <li>
+          <a href="{{ path_for('cart.index') }}">
+              Cart <span class="badge" id="comparison-count">0</span>
+          </a>
+      </li>
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategori<strong class="caret"></strong></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Action</a>
+          </li>
         </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control">
       </div>
-    </div>
+      <button type="submit" class="btn btn-default">
+        Cari
+      </button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="/login">Login</a>
+      </li>
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Action</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
-</div>
+
+</nav>
+<!-- End Navbar -->
